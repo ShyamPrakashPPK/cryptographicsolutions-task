@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import { Sidebar, Menu, MenuItem, menuClasses, MenuItemStyles } from 'react-pro-sidebar';
@@ -71,6 +72,10 @@ export const SideBar: React.FC = () => {
     const toggleSidebar = () => {
         setCollapsed(!collapsed);
     };
+
+    (window as any).broken = broken;
+    (window as any).setHasImage = setHasImage;
+    (window as any).setTheme = setTheme;
 
     const menuItemStyles: MenuItemStyles = {
         root: {
