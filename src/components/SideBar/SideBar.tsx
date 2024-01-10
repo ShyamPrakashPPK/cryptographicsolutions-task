@@ -115,7 +115,7 @@ export const SideBar: React.FC = () => {
 
 
     return (
-        <div style={{ display: 'flex', height: '100%', minHeight: '145vh' }}>
+        <div style={{ display: 'flex', height: '100%', minHeight: '195vh' }}>
             <Sidebar
                 collapsed={collapsed}
                 toggled={toggled}
