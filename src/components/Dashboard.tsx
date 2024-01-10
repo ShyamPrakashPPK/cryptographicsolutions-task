@@ -18,14 +18,15 @@ const Dashboard = () => {
             <div className='flex flex-row  '>
 
                 <SideBar />
-        
-                <div className='p-10 flex-grow'>
+
+                <div className='p-10 flex-col flex-grow '>
+                    <div className='flex justify-center md:justify-end '>
+                        <Filter />
+                    </div>
+                   
 
                     <div className="grid grid-cols-1 md:grid-cols-10 grid-rows-12 gap-5">
-                        
-                        <div className=" md:col-span-7"></div>
-                        <div className=" col-span-1 md:col-span-3"><Filter /></div>
-                        
+
 
                         <div className='col-span-1 md:col-span-4 row-span-4'>
                             <TotalCard />

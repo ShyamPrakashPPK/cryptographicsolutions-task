@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import { Sidebar, Menu, MenuItem, menuClasses, MenuItemStyles } from 'react-pro-sidebar';
@@ -73,9 +72,7 @@ export const SideBar: React.FC = () => {
         setCollapsed(!collapsed);
     };
 
-    (window as any).broken = broken;
-    (window as any).setHasImage = setHasImage;
-    (window as any).setTheme = setTheme;
+    
 
     const menuItemStyles: MenuItemStyles = {
         root: {
@@ -113,7 +110,7 @@ export const SideBar: React.FC = () => {
 
 
     return (
-        <div style={{ display: 'flex', height: '100%', minHeight: '100vh' }}>
+        <div style={{ display: 'flex', height: '100%', minHeight: '145vh' }}>
             <Sidebar
                 collapsed={collapsed}
                 toggled={toggled}
