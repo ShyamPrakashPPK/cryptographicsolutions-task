@@ -4,7 +4,7 @@
 const TotalCard = () => {
     return (
         <div>
-            <div className=" rounded-xl bg-cover bg-center p-10 bg-[url('src/assets/totlacardbg.png')]" >
+            <div className=" rounded-xl bg-cover bg-center p-10 bg-[url('src/assets/totlacardbg.png')] bg-blue-500" >
                 <div className="flex flex-col">
                     <div className="mt-2 font-medium text-white text-2xl">
                         Number of Paid Invoices
